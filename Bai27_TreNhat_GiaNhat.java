@@ -17,7 +17,6 @@ class Nguoi implements Comparable<Nguoi> {
     }
 
     private String getSortKey() {
-        // Chuyển dd/mm/yyyy thành yyyymmdd để so sánh từ già nhất đến trẻ nhất
         String[] parts = ngaySinh.split("/");
         return parts[2] + parts[1] + parts[0];
     }
@@ -42,7 +41,6 @@ public class Bai27_TreNhat_GiaNhat {
 
         Collections.sort(ds);
 
-        // Sau khi sắp xếp tăng dần theo ngày sinh: phần tử cuối là trẻ nhất, phần tử đầu là già nhất
         System.out.println(ds.get(ds.size() - 1).getTen());
         System.out.println(ds.get(0).getTen());
         sc.close();

@@ -13,7 +13,6 @@ public class Bai9_TinhTong {
                 try {
                     sum += Integer.parseInt(token);
                 } catch (NumberFormatException e) {
-                    // Bỏ qua nếu token là chữ hoặc số vượt quá giới hạn kiểu int
                 }
             }
 
